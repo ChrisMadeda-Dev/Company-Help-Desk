@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function NavBar() {
@@ -27,11 +28,11 @@ export default function NavBar() {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Home</a>
+                <Link href="/Home">Home</Link>
               </li>
 
               <li>
-                <a>Desk</a>
+                <Link href="/Helpdesk">Desk</Link>
               </li>
             </ul>
           </div>
@@ -42,10 +43,10 @@ export default function NavBar() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Home</a>
+              <Link href="/Home">Home</Link>
             </li>
             <li>
-              <a>Desk</a>
+              <Link href="/Helpdesk">Desk</Link>
             </li>
             <li>
               <a>Help</a>

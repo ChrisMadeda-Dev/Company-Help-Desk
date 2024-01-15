@@ -1,5 +1,6 @@
 import Image from "next/image";
 import heroImage from "../../../Images/1.jpg";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -16,7 +17,7 @@ export default function Hero() {
             Help desk. Click the button below to view the Help Desk. Blessed
           </p>
           <button className="btn btn-active btn-neutral w-3/6">
-            Go to Help Desk
+            <Link href="/Helpdesk">Go to Help Desk</Link>
           </button>
         </div>
         <div className="py-5 mb-10 rounded bg-blue-200 col-start-1 row-start-3 col-span-8 row-span-3 "></div>
